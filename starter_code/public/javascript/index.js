@@ -1,23 +1,26 @@
-const charactersAPI = new APIHandler("http://ih-api.herokuapp.com")
+const charactersAPI = new APIHandler("http://ih-api.herokuapp.com");
 
-$(document).ready( () => {
+$(document).ready(() => {
   $('#fetch-all').on('click', (e) => {
 
-  })
+  });
 
   $('#fetch-one').on('click', (e) => {
+    (e).preventDefault();
+    const idFromInput = $('#character-id').val();
 
-  })
+
+  });
 
   $('#delete-one').on('click', (e) => {
 
-  })
+  });
 
   $('#edit-character-form').on('submit', (e) => {
 
-  })
+  });
 
   $('#new-character-form').on('submit', (e) => {
-
-  })
-})
+    
+  });
+});
